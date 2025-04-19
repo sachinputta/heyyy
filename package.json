@@ -2,16 +2,15 @@
   "name": "today",
   "version": "0.0.0",
   "scripts": {
-  "ng": "ng",
-  "start": "node dist/server/main.js",
-  "build": "ng build",
-  "build:ssr": "ng build && ng run today:server",
-  "serve:ssr": "node dist/server/main.js",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "serve:ssr:today": "node dist/today/server/main.js"
-},
-
+    "ng": "ng",
+    "start": "node dist/server/main.js",
+    "build": "ng build",
+    "build:ssr": "ng build && ng run today:server",
+    "serve:ssr": "node dist/server/main.js",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:today": "node dist/today/server/main.js"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
@@ -43,5 +42,8 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
