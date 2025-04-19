@@ -2,13 +2,16 @@
   "name": "today",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:today": "node dist/today/server/server.mjs"
-  },
+  "ng": "ng",
+  "start": "node dist/server/main.js",
+  "build": "ng build",
+  "build:ssr": "ng build && ng run today:server",
+  "serve:ssr": "node dist/server/main.js",
+  "watch": "ng build --watch --configuration development",
+  "test": "ng test",
+  "serve:ssr:today": "node dist/today/server/main.js"
+},
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
